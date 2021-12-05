@@ -1,3 +1,33 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    display: inline-block;
+}
+#navigatsiya{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color:#BE3144 ;
+    text-align: center;
+}
+span{
+    margin: 0;
+    padding: 22px 20px;
+    color: #ffff;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+span:hover{
+    margin: 0;
+    padding: 22px 20px;
+    background-color: #45567D;
+    color: #ffff;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
 }
