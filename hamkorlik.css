@@ -3,21 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-div{
-    display: inline-block;
-}
 #navigatsiya{
     position: fixed;
     width: 100%;
     height: 10%;
     background-color:#BE3144 ;
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    z-index: 2;
 }
 span{
     margin: 0;
     padding: 22px 20px;
     color: #ffff;
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
     display: inline-block;
     height: 100%;
@@ -27,7 +28,43 @@ span:hover{
     padding: 22px 20px;
     background-color: #45567D;
     color: #ffff;
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
     cursor: pointer;
+}
+#welcome{
+    display: block;
+    width: 100%;
+    height: 685px;
+    background:linear-gradient(90deg, #373A3D, #1C1B1D);
+}
+#welcome h1{
+    position: absolute;
+    top:42%;
+    left: 34%;
+    color: #F0F0F0;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+#welcome p{
+    color: #BE3144;
+    position: absolute;
+    top:55%;
+    left: 40%;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+#kartalar{
+    width: 100%;
+    height: 1000px;
+    background-color: #45567D;
+    color: #F0F0F0;
+}
+#kartalar h2{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 43px;
+    text-align: center;
+    top: 10%;
 }
