@@ -2,59 +2,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
     scroll-behavior: smooth;
 }
 #navigatsiya{
     position: fixed;
     width: 100%;
-    height: 10%;
+    height: 65px;
     background-color:#BE3144 ;
     text-align: center;
     display: flex;
     justify-content: flex-end;
     top: 0;
     z-index: 2;
-    border-bottom: 2.6px solid black;
-}
-#cont{
-    margin-right: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
 }
 #navigatsiya a{
-    margin: 0;
     padding: 18px 16px;
     color: #ffff;
     font-size: 26px;
     text-align: center;
     display: inline-block;
-    height: 100%;
     text-decoration: none;
 }
 #navigatsiya a:hover{
-    margin: 0;
-    padding: 18px 16px;
     background-color: #45567D;
-    color: #ffff;
-    font-size: 26px;
-    text-align: center;
-    cursor: pointer;
 }
 #welcome{
+    margin-top: 65px;
+    padding-top: 15%;
+    text-align: center;
     display: block;
     width: 100%;
     height: 684px;
     background:linear-gradient(90deg, #373A3D, #1C1B1D);
 }
 #welcome h1{
-    position: absolute;
-    top:42%;
-    left: 34%;
+    margin-bottom: 15px;
     color: #F0F0F0;
     font-size: 60px;
     font-family: 'Poppins', sans-serif;
 }
 #welcome p{
     color: #BE3144;
-    position: absolute;
     top:55%;
     left: 40%;
     font-size: 30px;
@@ -62,44 +53,51 @@
     font-style: italic;
 }
 #kartalar{
-    position: relative;
     width: 100%;
-    height: 1000px;
+    padding: 5%;
+    text-align: center;
     background-color: #45567D;
     color: #F0F0F0;
 }
 #kartalar h2{
-    position: relative;
     font-family: 'Poppins', sans-serif;
     font-size: 43px;
-    text-align: center;
-    top: 10%;
     border: 2px solid inherit;
-    border-bottom: 2px solid #ffff;
+    border-bottom: 1px solid #ffff;
     padding: 6px;
+    margin-bottom: 50px;
+}
+.card_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: ease-in-out 1s;
+}
+.link img{
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.link span{
+    font-size: 1.5rem;
+    display: block;
+    padding: 10px 0;
+}
+.link{
     display: inline-block;
-    left: 26%;
+    width: 32.5%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #1E1E1E;
+    color: azure;
+    text-decoration: none;
+    margin-bottom: 20px;
 }
-#kartalar span{
-    position: relative;
-    top: 85%;
-    border: 1px solid #303841;
-    border-radius: 1px;
-    font-size: 20px;
-    padding: 10px 15px;
-    cursor: pointer;
-    background-color: #303841;
-}
-#kartalar span:hover{
-    position: relative;
-    top: 85%;
-    border: 1px solid #303841;
-    border-radius: 1px;
-    font-size: 20px;
-    padding: 10px 15px;
-    cursor: pointer;
-    background-color: #BE3144;
-    transition: .5s;
+.link_bnt{
+    margin-top: 50px;
+    width: auto;
+    padding: 20px 50px;
 }
 #contacts{
     width: 100%;
@@ -107,18 +105,18 @@
     text-align: center;
     background-color: #303841;
     color: #F0F0F0;
+    padding: 5%;
 }
 #contacts h2{
     font-size: 60px;
-    position: relative;
     top: 25%;
 }
 #contacts p{
-    position: relative;
     top: 28%;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
-    font-size: 18px;
+    font-size: 18px;    
+    margin-bottom: 50px;
 }
 #contacts a{
     color: #F0F0F0;
@@ -126,23 +124,23 @@
     padding: 15px;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
-    position: relative;
-    top: 40%;
+}
+.hidden{
+    height: 0;
+    overflow: hidden;
+    transition: ease-in-out 1s;
 }
 footer{
-    display: flex;
-    justify-content: space-evenly;
     width: 100%;
     height: 100px;
     background-color: #303841;
-    position: relative;
     border-top: 3px solid #BE3144;
     color: #F0F0F0;
+    text-align: center;
 }
 footer p{
     font-family: 'Times New Roman';
     font-size: 19px;
     display: inline-block;
-    position: relative;
     padding: 30px;
 }
