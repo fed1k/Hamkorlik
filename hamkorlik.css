@@ -18,7 +18,7 @@
 #cont{
     margin-right: 15px;
 }
-span{
+a{
     margin: 0;
     padding: 18px 16px;
     color: #ffff;
@@ -26,8 +26,9 @@ span{
     text-align: center;
     display: inline-block;
     height: 100%;
+    text-decoration: none;
 }
-span:hover{
+a:hover{
     margin: 0;
     padding: 18px 16px;
     background-color: #45567D;
@@ -71,4 +72,9 @@ span:hover{
     font-size: 43px;
     text-align: center;
     top: 10%;
+    border: 2px solid inherit;
+    border-bottom: 2px solid #ffff;
+    padding: 6px;
+    display: inline-block;
+    left: 26%;
 }
