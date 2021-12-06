@@ -13,10 +13,14 @@
     justify-content: flex-end;
     top: 0;
     z-index: 2;
+    border-bottom: 2.6px solid black;
+}
+#cont{
+    margin-right: 15px;
 }
 span{
     margin: 0;
-    padding: 22px 20px;
+    padding: 18px 16px;
     color: #ffff;
     font-size: 26px;
     text-align: center;
@@ -25,7 +29,7 @@ span{
 }
 span:hover{
     margin: 0;
-    padding: 22px 20px;
+    padding: 18px 16px;
     background-color: #45567D;
     color: #ffff;
     font-size: 26px;
